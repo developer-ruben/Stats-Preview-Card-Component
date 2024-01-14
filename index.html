@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="card__body">
+          <h2 class="card__title">
+            Get <span class="highlight">insights</span> that help your business
+            grow.
+          </h2>
+          <p class="card__text">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <ul class="card__list">
+            <li class="card__item">
+              10k+ <span class="card__item-type">companies</span>
+            </li>
+            <li class="card__item">
+              314<span class="card__item-type">templates</span>
+            </li>
+            <li class="card__item">
+              12M+ <span class="card__item-type">queries</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card__header">
+          <picture>
+            <source
+              media="(min-width: 769px)"
+              srcset="./images/image-header-desktop.jpg"
+            />
+
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/image-header-mobile.jpg"
+            />
+
+            <img
+              src="./images/image-header-desktop.jpg"
+              alt="IfItDoesntMatchAnyMedia"
+              class="card__image"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <footer class="attribution">
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="attribution__link"
+          href="https://rubendeman.nl"
+          target="_blank"
+          >Ruben de Man</a
+        >.
+      </footer>
+    </main>
+  </body>
+</html>
